@@ -1,0 +1,30 @@
+[
+  {
+    "sender": "user@example.com",
+    "message": "Hi, I want pricing",
+    "intent": "lead",
+    "reply": "Thank you for reaching out! We appreciate your interest in our AI automation services.\n\nOur pricing is tailored to each client's unique needs and project scope, as our solutions are custom-built to achieve specific business goals. To provide you with the most accurate quote, we'd love to learn more about what you're looking to achieve. Would you be available for a brief call next week to discuss your requirements in more detail?",
+    "timestamp": "2026-02-08T21:11:42.540202"
+  },
+  {
+    "sender": "user@example.com",
+    "message": "Hi, I want pricing",
+    "intent": "lead",
+    "reply": "Hi there! Thanks for reaching out and showing interest in our AI automation services.\n\nOur solutions are typically customized to meet the unique needs of each business, so pricing isn't a one-size-fits-all. To provide you with the most accurate information and a relevant quote, I'd love to schedule a brief call to understand your specific goals and challenges. Would you be available for a quick chat sometime this week?",
+    "timestamp": "2026-02-08T21:23:59.556374"
+  },
+  {
+    "sender": "noreply@upwork.com",
+    "message": "I want to talk about how to get clients efficiently",
+    "intent": "lead",
+    "reply": "That's a fantastic goal, and something our AI automation solutions are specifically designed to help businesses achieve! We leverage AI to streamline lead generation, personalize outreach, and optimize sales funnels for maximum efficiency. I'd love to schedule a brief call to understand your specific needs and explore how our AI services can help you acquire clients more effectively. Would you be open to a quick chat sometime next week?",
+    "timestamp": "2026-02-09T17:38:36.925250"
+  },
+  {
+    "sender": "demo@gmail.com",
+    "message": "Hey there, \r\nyou getting a free laptop by participating in simple tasks click here to view the task - https://www.jbkjbncd.com",
+    "intent": "spam",
+    "reply": "Thank you for the message, but I'm not interested.",
+    "timestamp": "2026-02-09T17:39:50.123717"
+  }
+]

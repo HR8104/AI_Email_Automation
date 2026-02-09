@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logs Dashboard - AI Email Automation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-section">
+                <h1>📊 Logs Dashboard</h1>
+                <p>View all processed emails and AI responses</p>
+            </div>
+            <nav>
+                <a href="/">Process Email</a>
+                <a href="/logs" class="active">View Logs</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>Email Processing History</h2>
+
+        {% if logs %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Sender</th>
+                    <th>Message</th>
+                    <th>Intent</th>
+                    <th>Reply</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for log in logs %}
+                <tr>
+                    <td>{{ log.timestamp }}</td>
+                    <td>{{ log.sender }}</td>
+                    <td>{{ log.message[:50] }}...</td>
+                    <td><strong>{{ log.intent }}</strong></td>
+                    <td>{{ log.reply[:50] }}...</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% else %}
+        <div class="empty-state">
+            <p>📭 No logs yet. Process some emails to see them here!</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
