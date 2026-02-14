@@ -40,9 +40,9 @@
 </div>
 
 <script>
-const API = "https://YOUR-N8N-URL/webhook/admin/bookings";
-const CANCEL_API = "https://YOUR-N8N-URL/webhook/cancel";
-const RESCHEDULE_PAGE = "https://YOUR-GITHUB-PAGES/reschedule.html";
+const API = "http://localhost:5678/webhook-test/booking-request";
+const CANCEL_API = "http://localhost:5678/webhook-test/cancel";
+const RESCHEDULE_PAGE = "https://hr8104.github.io/AI_Email_Automation/reschedule.html";
 
 fetch(API)
   .then(res => res.json())
@@ -81,3 +81,4 @@ function rescheduleBooking(eventId) {
 
 </body>
 </html>
+
