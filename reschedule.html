@@ -79,7 +79,7 @@
 
     try {
       const res = await fetch("http://localhost:5678/webhook-test/reschedule?eventId={{ $json.eventId }}", {
-        method: "GET",
+        method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
       });
@@ -98,3 +98,4 @@
 
 </body>
 </html>
+
