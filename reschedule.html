@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reschedule Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+    }
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #3498db;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #217dbb;
+    }
+    #msg {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Reschedule Booking</h2>
+
+  <form id="rescheduleForm">
+    <input type="date" name="new_date" required />
+    <input type="time" name="new_time" required />
+    <button type="submit">Reschedule</button>
+  </form>
+
+  <p id="msg"></p>
+</div>
+
+<script>
+  // Get eventId from URL (?eventId=xxxx)
+  const params = new URLSearchParams(window.location.search);
+  const eventId = params.get("eventId");
+
+  if (!eventId) {
+    document.getElementById("msg").textContent = "Invalid or missing booking ID.";
+    document.getElementById("msg").style.color = "red";
+  }
+
+  document.getElementById("rescheduleForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form));
+    data.eventId = eventId;
+
+    const msg = document.getElementById("msg");
+    msg.textContent = "Rescheduling...";
+
+    try {
+      const res = await fetch("http://localhost:5678/webhook-test/reschedule?eventId={{ $json.eventId }}", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      msg.textContent = result.message;
+      msg.style.color = result.status === "success" ? "green" : "red";
+
+    } catch (err) {
+      msg.textContent = "Something went wrong. Please try again.";
+      msg.style.color = "red";
+    }
+  });
+</script>
+
+</body>
+</html>
+
