@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="workstream365 - Building Intelligent Digital Solutions. Web development, AI automations, and workflow systems.">
+    <title>workstream365 | Intelligent Digital Solutions</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">workstream<span>365</span></a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#process" class="nav__link">Process</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link nav__link-btn">Get Started</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle"><i class="fa-solid fa-bars-staggered"></i></div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container grid">
+                <div class="hero__content">
+                    <span class="hero__subtitle">Intelligent Digital Solutions</span>
+                    <h1 class="hero__title">Building the <br>Future with <span class="gradient-text">AI & Web</span></h1>
+                    <p class="hero__description">
+                        At workstream365, we craft premium digital experiences using cutting-edge technologies. 
+                        From dynamic web applications to intelligent AI-driven workflow systems.
+                    </p>
+                    <div class="hero__btns">
+                        <a href="#contact" class="btn btn--primary">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#services" class="btn btn--secondary">View Services</a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="hero__stat-item">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <span>Projects Completed</span>
+                        </div>
+                        <div class="hero__stat-item">
+                            <h3 class="stat-number" data-target="95">0</h3>
+                            <span>Success Rate (%)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                    <div class="hero__blob"></div>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop" alt="AI Tech" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <span class="section__subtitle">Who We Are</span>
+                    <h2 class="section__title">Innovating with Purpose</h2>
+                    <p class="about__description">
+                        workstream365 is a modern tech company dedicated to transforming ideas into scalable reality. 
+                        Our mission is to empower businesses with intelligent digital tools that drive efficiency and growth.
+                    </p>
+                    <div class="about__highlights">
+                        <div class="about__highlight">
+                            <div class="highlight__icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="highlight__content">
+                                <h3>Cutting-edge Tech</h3>
+                                <p>We use the latest AI and web technologies to stay ahead.</p>
+                            </div>
+                        </div>
+                        <div class="about__highlight">
+                            <div class="highlight__icon"><i class="fa-solid fa-users-gear"></i></div>
+                            <div class="highlight__content">
+                                <h3>User-Centric Design</h3>
+                                <p>Focusing on human-centered experiences for every solution.</p>
+                            </div>
+                        </div>
+                        <div class="about__highlight">
+                            <div class="highlight__icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="highlight__content">
+                                <h3>Fast & Scalable</h3>
+                                <p>Optimized systems built to grow alongside your business.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" alt="Our Team" class="about__img">
+                    <div class="about__card">
+                        <span class="about__card-number">2+</span>
+                        <span class="about__card-text">Months of Excellence</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">Our Services</span>
+                    <h2 class="section__title">Solutions We Provide</h2>
+                </div>
+
+                <div class="services__container grid">
+                    <!-- Website Development -->
+                    <div class="service__card">
+                        <div class="service__icon"><i class="fa-solid fa-code"></i></div>
+                        <h3 class="service__title">Website Development</h3>
+                        <p class="service__description">Responsive, fast, and SEO-friendly websites tailored to your brand identity.</p>
+                        <ul class="service__list">
+                            <li><i class="fa-solid fa-check"></i> Custom UI/UX</li>
+                            <li><i class="fa-solid fa-check"></i> Performance Optimization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Application Development -->
+                    <div class="service__card">
+                        <div class="service__icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="service__title">Web Applications</h3>
+                        <p class="service__description">Scalable web platforms with complex functionalities and robust backends.</p>
+                        <ul class="service__list">
+                            <li><i class="fa-solid fa-check"></i> SaaS Solutions</li>
+                            <li><i class="fa-solid fa-check"></i> Enterprise Portals</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI Automations -->
+                    <div class="service__card">
+                        <div class="service__icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3 class="service__title">AI Automations</h3>
+                        <p class="service__description">Streamline your business operations using intelligent AI-driven automation tools.</p>
+                        <ul class="service__list">
+                            <li><i class="fa-solid fa-check"></i> Process Automation</li>
+                            <li><i class="fa-solid fa-check"></i> Data Processing</li>
+                        </ul>
+                    </div>
+
+                    <!-- AI Agents & Workflow Systems -->
+                    <div class="service__card">
+                        <div class="service__icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3 class="service__title">AI Agents</h3>
+                        <p class="service__description">Custom autonomous AI agents and intelligent workflow systems for modern teams.</p>
+                        <ul class="service__list">
+                            <li><i class="fa-solid fa-check"></i> RAG Systems</li>
+                            <li><i class="fa-solid fa-check"></i> Autonomous Agents</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">Our Work</span>
+                    <h2 class="section__title">Success Stories</h2>
+                </div>
+
+                <div class="portfolio__container grid">
+                    <!-- Project 1: Restaurant -->
+                    <div class="portfolio__card">
+                        <div class="portfolio__img-box">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop" alt="Restaurant Project" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <a href="Projects/Restuarant/index.html" class="portfolio__link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Web Development</span>
+                            <h3 class="portfolio__title">Premium Restaurant Website</h3>
+                            <p class="portfolio__desc">A high-end website for a fine dining restaurant with theme switching and online booking.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Digital Agency -->
+                    <div class="portfolio__card">
+                        <div class="portfolio__img-box">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" alt="Digital Agency" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <a href="Projects/digital-agency/index.html" class="portfolio__link" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">Digital Marketing</span>
+                            <h3 class="portfolio__title">Digital Agency Landing Page</h3>
+                            <p class="portfolio__desc">Modern landing page for marketing firms with service sections and portfolio grid.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Voice Agent (Coming Soon) -->
+                    <div class="portfolio__card">
+                        <div class="portfolio__img-box">
+                            <img src="https://images.unsplash.com/photo-1589254065675-d0581bb49a79?q=80&w=1000&auto=format&fit=crop" alt="Voice Agent" class="portfolio__img">
+                            <div class="portfolio__overlay">
+                                <span class="portfolio__badge">Coming Soon</span>
+                            </div>
+                        </div>
+                        <div class="portfolio__content">
+                            <span class="portfolio__category">AI Agent</span>
+                            <h3 class="portfolio__title">AI Voice Agent</h3>
+                            <p class="portfolio__desc">Intelligent autonomous voice system for customer support and task automation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="process section" id="process">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">How We Work</span>
+                    <h2 class="section__title">Our 5-Step Process</h2>
+                </div>
+
+                <div class="process__container grid">
+                    <div class="process__item">
+                        <div class="process__number">01</div>
+                        <h3 class="process__title">Discover</h3>
+                        <p class="process__desc">Understanding your goals, challenges, and requirements.</p>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__number">02</div>
+                        <h3 class="process__title">Design</h3>
+                        <p class="process__desc">Crafting the visual identity and user experience.</p>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__number">03</div>
+                        <h3 class="process__title">Develop</h3>
+                        <p class="process__desc">Building robust and scalable solutions with precision.</p>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__number">04</div>
+                        <h3 class="process__title">Deploy</h3>
+                        <p class="process__desc">Seamlessly launching your project to the real world.</p>
+                    </div>
+                    <div class="process__item">
+                        <div class="process__number">05</div>
+                        <h3 class="process__title">Optimize</h3>
+                        <p class="process__desc">Continuous monitoring and improvements for peak performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section">
+            <div class="container">
+                <div class="section__header text-center">
+                    <span class="section__subtitle">Testimonials</span>
+                    <h2 class="section__title">What Our Clients Say</h2>
+                </div>
+
+                <div class="testimonials__container grid">
+                    <div class="testimonial__card">
+                        <div class="testimonial__quote"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial__text">
+                            "workstream365 transformed our manual workflows into a seamless AI-driven system. Their attention to detail is remarkable."
+                        </p>
+                        <div class="testimonial__client">
+                            <img src="https://i.pravatar.cc/150?u=1" alt="Client 1" class="client__img">
+                            <div class="client__info">
+                                <h4>Sarah Johnson</h4>
+                                <span>CEO at TechFlow</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__card">
+                        <div class="testimonial__quote"><i class="fa-solid fa-quote-left"></i></div>
+                        <p class="testimonial__text">
+                            "The web application they built for us is not only beautiful but incredibly fast. Highly recommend their services!"
+                        </p>
+                        <div class="testimonial__client">
+                            <img src="https://i.pravatar.cc/150?u=2" alt="Client 2" class="client__img">
+                            <div class="client__info">
+                                <h4>Michael Chen</h4>
+                                <span>Founder, NovaScale</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container grid">
+                <div class="contact__info">
+                    <span class="section__subtitle">Get in Touch</span>
+                    <h2 class="section__title">Let's Build Something <br>Great Together</h2>
+                    <p class="contact__description">
+                        Ready to start your next project? Drop us a message and we'll get back to you within 24 hours.
+                    </p>
+                    <div class="contact__details">
+                        <div class="contact__item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>hello@workstream365.com</p>
+                            </div>
+                        </div>
+                        <div class="contact__socials">
+                            <a href="#" class="contact__social-link"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="contact__social-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" class="contact__social-link"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form__input" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email Address</label>
+                        <input type="email" id="email" id="email" class="form__input" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Project Details</label>
+                        <textarea id="message" name="message" class="form__input" rows="5" placeholder="Tell us about your project" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    <p class="form__status" id="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">workstream<span>365</span></a>
+                <p class="footer__description">
+                    Leading the way in AI-powered digital solutions. 
+                    Building the future, one intelligent system at a time.
+                </p>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Quick Links</h3>
+                <ul class="footer__list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__links">
+                <h3 class="footer__title">Support</h3>
+                <ul class="footer__list">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__bottom container">
+            <p class="footer__copy">&copy; 2026 workstream365. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#home" class="scrolltop" id="scrolltop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- GSAP (Optional for smoother animations if allowed, but user asked for Vanilla JS. I will use ScrollReveal JS library via CDN as it's common for professional sites or just manual Intersection Observer) -->
+    <!-- I'll use simple scroll reveal with CSS + JS Intersection Observer for "Vanilla" feel -->
+    <script src="script.js"></script>
+</body>
+</html>

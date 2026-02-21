@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NexaGrow – A premium digital marketing agency helping brands grow with smart strategies, SEO, social media, and data-driven campaigns."
+    />
+    <title>NexaGrow – Smart Digital Marketing Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">Nexa<span>Grow</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#pricing" class="nav-link">Pricing</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <canvas id="particleCanvas"></canvas>
+        <div class="gradient-orb orb1"></div>
+        <div class="gradient-orb orb2"></div>
+        <div class="gradient-orb orb3"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge">🚀 AI-Powered Marketing Solutions</div>
+        <h1 class="hero-title">
+          Grow Your Business With
+          <span class="gradient-text">Smart Digital Marketing</span>
+        </h1>
+        <p class="hero-subtitle">
+          We craft data-driven strategies that amplify your brand, attract more
+          customers, and deliver measurable results. Let's build something
+          extraordinary.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary btn-large"
+            >Get Started
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" /></svg
+          ></a>
+          <a href="#services" class="btn btn-outline btn-large">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">200+</span
+            ><span class="stat-label">Clients</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">5+</span
+            ><span class="stat-label">Years</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">98%</span
+            ><span class="stat-label">Satisfaction</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">$50M+</span
+            ><span class="stat-label">Revenue Generated</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-dot"></div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">What We Do</span>
+          <h2 class="section-title">
+            Services That <span class="gradient-text">Drive Growth</span>
+          </h2>
+          <p class="section-subtitle">
+            From strategy to execution, we deliver end-to-end digital marketing
+            solutions tailored to your goals.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
+              </svg>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>
+              Dominate search rankings with technical SEO, keyword strategy, and
+              content that converts visitors into customers.
+            </p>
+            <a href="#contact" class="service-link">Learn more →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+              </svg>
+            </div>
+            <h3>Performance Marketing</h3>
+            <p>
+              Maximize ROI with precision-targeted paid campaigns on Google,
+              Meta, and LinkedIn that deliver real results.
+            </p>
+            <a href="#contact" class="service-link">Learn more →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3>Social Media Marketing</h3>
+            <p>
+              Build a loyal community and skyrocket engagement with compelling
+              content strategies across all platforms.
+            </p>
+            <a href="#contact" class="service-link">Learn more →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <h3>Web Design & Dev</h3>
+            <p>
+              High-converting, blazing-fast websites and landing pages built
+              with modern tech and conversion psychology.
+            </p>
+            <a href="#contact" class="service-link">Learn more →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <path
+                  d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                />
+              </svg>
+            </div>
+            <h3>Content Marketing</h3>
+            <p>
+              Engage and educate your audience with strategic blogs, video
+              content, and multimedia that establishes authority.
+            </p>
+            <a href="#contact" class="service-link">Learn more →</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                <line x1="8" y1="21" x2="16" y2="21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+              </svg>
+            </div>
+            <h3>Analytics & Insights</h3>
+            <p>
+              Turn data into decisions with advanced analytics, custom
+              dashboards, and actionable growth reports.
+            </p>
+            <a href="#contact" class="service-link">Learn more →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual">
+            <div class="about-image-wrapper">
+              <div class="about-img-placeholder">
+                <div class="about-inner-card">
+                  <div class="about-icon-grid">
+                    <div class="ai-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <path
+                          d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ai-icon pulse">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 8v4l3 3" />
+                      </svg>
+                    </div>
+                    <div class="ai-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                      </svg>
+                    </div>
+                    <div class="ai-icon pulse2">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <polygon
+                          points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p class="about-img-text">Powered by Innovation</p>
+                </div>
+              </div>
+              <div class="floating-badge badge1">📈 200% Growth</div>
+              <div class="floating-badge badge2">🏆 Award Winning</div>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-badge">Who We Are</span>
+            <h2 class="section-title">
+              We're the <span class="gradient-text">Growth Engine</span> Behind
+              Leading Brands
+            </h2>
+            <p class="about-text">
+              NexaGrow is a results-obsessed digital marketing agency. We
+              combine creative brilliance with data intelligence to craft
+              campaigns that don't just look good—they perform. Since 2019,
+              we've helped 200+ businesses transform their digital presence.
+            </p>
+            <p class="about-text">
+              Our multidisciplinary team of strategists, designers, and growth
+              hackers work as an extension of your team, deeply invested in your
+              success.
+            </p>
+            <div class="stats-grid">
+              <div class="stat-box">
+                <span class="stat-box-num" data-target="200">0</span
+                ><span>+</span>
+                <span class="stat-box-label">Clients Served</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-box-num" data-target="5">0</span
+                ><span>+</span>
+                <span class="stat-box-label">Years Experience</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-box-num" data-target="98">0</span
+                ><span>%</span>
+                <span class="stat-box-label">Client Satisfaction</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-box-num" data-target="50">0</span
+                ><span>M+</span>
+                <span class="stat-box-label">Revenue Generated</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section class="portfolio section" id="portfolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Our Work</span>
+          <h2 class="section-title">
+            Case Studies & <span class="gradient-text">Success Stories</span>
+          </h2>
+          <p class="section-subtitle">
+            Real results for real businesses. See how we've helped brands
+            achieve extraordinary growth.
+          </p>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <div
+              class="portfolio-img"
+              style="
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              "
+            >
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">SEO + Content</span>
+                <h3>TechFlow SaaS</h3>
+                <p>340% increase in organic traffic in 6 months</p>
+                <a href="#contact" class="btn btn-outline btn-sm"
+                  >View Case Study →</a
+                >
+              </div>
+              <div class="portfolio-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1"
+                >
+                  <circle cx="11" cy="11" r="8" />
+                  <path d="m21 21-4.35-4.35" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div
+              class="portfolio-img"
+              style="
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+              "
+            >
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Social Media + Ads</span>
+                <h3>Luxe Fashion Co.</h3>
+                <p>5x ROAS on Meta campaigns, 80K new followers</p>
+                <a href="#contact" class="btn btn-outline btn-sm"
+                  >View Case Study →</a
+                >
+              </div>
+              <div class="portfolio-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div
+              class="portfolio-img"
+              style="
+                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+              "
+            >
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">PPC + Analytics</span>
+                <h3>HealthPlus Clinic</h3>
+                <p>200% more leads, 60% lower cost-per-acquisition</p>
+                <a href="#contact" class="btn btn-outline btn-sm"
+                  >View Case Study →</a
+                >
+              </div>
+              <div class="portfolio-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1"
+                >
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div
+              class="portfolio-img"
+              style="
+                background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+              "
+            >
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Web + SEO</span>
+                <h3>GreenEarth Store</h3>
+                <p>New website drove 150% more conversions</p>
+                <a href="#contact" class="btn btn-outline btn-sm"
+                  >View Case Study →</a
+                >
+              </div>
+              <div class="portfolio-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1"
+                >
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div
+              class="portfolio-img"
+              style="
+                background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+              "
+            >
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Content + Email</span>
+                <h3>EduTech Academy</h3>
+                <p>42% email open rate, 3x course enrollments</p>
+                <a href="#contact" class="btn btn-outline btn-sm"
+                  >View Case Study →</a
+                >
+              </div>
+              <div class="portfolio-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1"
+                >
+                  <path
+                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-card">
+            <div
+              class="portfolio-img"
+              style="
+                background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+              "
+            >
+              <div class="portfolio-overlay">
+                <span class="portfolio-tag">Full-Stack Marketing</span>
+                <h3>FinEdge Consultancy</h3>
+                <p>$2M pipeline generated in Q1 through digital</p>
+                <a href="#contact" class="btn btn-outline btn-sm"
+                  >View Case Study →</a
+                >
+              </div>
+              <div class="portfolio-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  stroke-width="1"
+                >
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Testimonials</span>
+          <h2 class="section-title">
+            What Our <span class="gradient-text">Clients Say</span>
+          </h2>
+          <p class="section-subtitle">
+            Don't just take our word for it — hear from the brands we've helped
+            grow.
+          </p>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial-track" id="testimonialTrack">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                "NexaGrow completely transformed our online presence. Within 4
+                months, our organic traffic tripled and we're getting
+                consistent, high-quality leads every single day. Absolutely
+                exceptional team!"
+              </p>
+              <div class="testimonial-author">
+                <div
+                  class="author-avatar"
+                  style="background: linear-gradient(135deg, #667eea, #764ba2)"
+                >
+                  JM
+                </div>
+                <div>
+                  <strong>James Mitchell</strong>
+                  <span>CEO, TechFlow SaaS</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Our Meta ad campaign managed by NexaGrow achieved a 5x ROAS
+                consistently. Their attention to detail, creativity, and
+                data-driven approach is unmatched. Our sales have never been
+                better!"
+              </p>
+              <div class="testimonial-author">
+                <div
+                  class="author-avatar"
+                  style="background: linear-gradient(135deg, #f093fb, #f5576c)"
+                >
+                  SR
+                </div>
+                <div>
+                  <strong>Sofia Rodriguez</strong>
+                  <span>Marketing Director, Luxe Fashion Co.</span>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">
+                "Working with NexaGrow was a game-changer. They cut our CPA by
+                60% while doubling the leads we receive. Their team truly
+                understands our business and treats our goals as their own."
+              </p>
+              <div class="testimonial-author">
+                <div
+                  class="author-avatar"
+                  style="background: linear-gradient(135deg, #4facfe, #00f2fe)"
+                >
+                  DK
+                </div>
+                <div>
+                  <strong>Dr. David Kumar</strong>
+                  <span>Founder, HealthPlus Clinic</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-controls">
+            <button
+              class="testimonial-btn"
+              id="prevTestimonial"
+              aria-label="Previous"
+            >
+              &#8592;
+            </button>
+            <div class="testimonial-dots" id="testimonialDots">
+              <span class="dot active" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+            </div>
+            <button
+              class="testimonial-btn"
+              id="nextTestimonial"
+              aria-label="Next"
+            >
+              &#8594;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING ========== -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Pricing Plans</span>
+          <h2 class="section-title">
+            Transparent <span class="gradient-text">Pricing</span> For Every
+            Stage
+          </h2>
+          <p class="section-subtitle">
+            Choose the plan that fits your growth goals. No hidden fees, no
+            surprises.
+          </p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="plan-name">Starter</div>
+            <div class="plan-price">
+              <span class="currency">$</span>499<span class="period">/mo</span>
+            </div>
+            <p class="plan-desc">
+              Perfect for small businesses just getting started with digital
+              marketing.
+            </p>
+            <ul class="plan-features">
+              <li>✓ SEO Audit & Setup</li>
+              <li>✓ 2 Social Media Platforms</li>
+              <li>✓ 8 Posts/Month</li>
+              <li>✓ Monthly Analytics Report</li>
+              <li>✓ Email Support</li>
+              <li class="disabled">✗ Paid Ads Management</li>
+              <li class="disabled">✗ Dedicated Account Manager</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+          <div class="pricing-card featured">
+            <div class="popular-badge">Most Popular</div>
+            <div class="plan-name">Growth</div>
+            <div class="plan-price">
+              <span class="currency">$</span>1,299<span class="period"
+                >/mo</span
+              >
+            </div>
+            <p class="plan-desc">
+              For growing businesses that want to scale fast and dominate their
+              market.
+            </p>
+            <ul class="plan-features">
+              <li>✓ Full SEO Management</li>
+              <li>✓ 4 Social Media Platforms</li>
+              <li>✓ 20 Posts/Month</li>
+              <li>✓ Google + Meta Ads</li>
+              <li>✓ Weekly Reports</li>
+              <li>✓ Content Creation</li>
+              <li>✓ Dedicated Account Manager</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+          </div>
+          <div class="pricing-card">
+            <div class="plan-name">Enterprise</div>
+            <div class="plan-price">
+              <span class="currency">$</span>2,999<span class="period"
+                >/mo</span
+              >
+            </div>
+            <p class="plan-desc">
+              Full-service marketing for established brands ready to dominate at
+              scale.
+            </p>
+            <ul class="plan-features">
+              <li>✓ Everything in Growth</li>
+              <li>✓ All Social Platforms</li>
+              <li>✓ Unlimited Content</li>
+              <li>✓ All Ad Platforms</li>
+              <li>✓ Daily Reporting</li>
+              <li>✓ Custom Strategy</li>
+              <li>✓ Priority 24/7 Support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Get In Touch</span>
+          <h2 class="section-title">
+            Ready to <span class="gradient-text">Grow Together?</span>
+          </h2>
+          <p class="section-subtitle">
+            Tell us about your project and we'll get back to you with a
+            customized growth strategy.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <div>
+                <strong>Our Office</strong>
+                <p>123 Innovation Drive, San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </div>
+              <div>
+                <strong>Email Us</strong>
+                <p>hello@nexagrow.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.69h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.09a16 16 0 0 0 6 6l1.47-1.47a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <strong>Call Us</strong>
+                <p>+1 (888) 555-NEXA</p>
+              </div>
+            </div>
+            <div class="response-time">
+              <div class="green-dot"></div>
+              <span>Average response time: <strong>under 2 hours</strong></span>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name *</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="John Doe"
+                  required
+                />
+                <span class="form-error" id="fnameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address *</label>
+                <input
+                  type="email"
+                  id="femail"
+                  name="femail"
+                  placeholder="john@company.com"
+                  required
+                />
+                <span class="form-error" id="femailError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fservice">Service Interested In</label>
+              <select id="fservice" name="fservice">
+                <option value="">Select a service...</option>
+                <option>SEO Optimization</option>
+                <option>Performance Marketing</option>
+                <option>Social Media Marketing</option>
+                <option>Web Design & Development</option>
+                <option>Content Marketing</option>
+                <option>Analytics & Insights</option>
+                <option>Full-Service Package</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Your Message *</label>
+              <textarea
+                id="fmessage"
+                name="fmessage"
+                rows="5"
+                placeholder="Tell us about your business and marketing goals..."
+                required
+              ></textarea>
+              <span class="form-error" id="fmessageError"></span>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary btn-block btn-large"
+              id="submitBtn"
+            >
+              <span id="btnText">Send Message 🚀</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Thank you! We'll be in touch within 2 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">Nexa<span>Grow</span></a>
+            <p>
+              We help ambitious brands grow their digital presence with smart,
+              data-driven marketing strategies.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">SEO Optimization</a></li>
+              <li><a href="#services">Performance Marketing</a></li>
+              <li><a href="#services">Social Media</a></li>
+              <li><a href="#services">Web Development</a></li>
+              <li><a href="#services">Content Marketing</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#portfolio">Case Studies</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 NexaGrow Digital Agency. All rights reserved.</p>
+          <p>Crafted with ❤️ for ambitious brands.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

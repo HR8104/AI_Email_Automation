@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ember &amp; Ash Café – A warm, minimal café where every cup and every plate is made with intention. Come for the coffee, stay for the food." />
+  <title>Ember &amp; Ash | Café &amp; Kitchen</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon">🔥</span>
+        <span class="logo-text">Ember <span class="logo-accent">&amp;</span> Ash</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-btn">Book Table</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon light-icon" aria-hidden="true">
+            <i class="fas fa-sun"></i>
+          </span>
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+          <span class="theme-icon dark-icon" aria-hidden="true">
+            <i class="fas fa-moon"></i>
+          </span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <img
+      src="https://images.unsplash.com/photo-1504754524776-8f4f69903799?w=1920&q=80"
+      alt="Bright and inviting cafe interior with coffee and pastries"
+      class="hero-bg"
+    />
+    <div class="hero-content">
+      <p class="hero-tag">Crafted with Care · Est. 2009</p>
+      <h1 class="hero-title">Where Every Sip<br />Tells a <span class="hero-accent">Story</span></h1>
+      <p class="hero-desc">Slow mornings, honest flavours, and a space that feels like home. Come as you are — stay as long as you like.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn btn-primary">
+          <i class="fas fa-mug-hot"></i> Explore Menu
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-calendar-alt"></i> Reserve a Table
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">15+</span><span class="stat-label">Years of Excellence</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Dishes Crafted</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4.9★</span><span class="stat-label">Customer Rating</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SPECIAL OFFERS ===================== -->
+  <section class="offers" id="offers">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Limited Time</p>
+        <h2 class="section-title">Special <span class="accent">Offers</span></h2>
+        <p class="section-sub">Taste the extraordinary without breaking the bank. Our chefs' curated deals await.</p>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card" data-aos="fade-up">
+          <div class="offer-badge">HOT DEAL</div>
+          <div class="offer-icon"><i class="fas fa-percent"></i></div>
+          <h3>Flat 20% Off</h3>
+          <p>On all dine-in orders every Tuesday & Wednesday. Enjoy our full menu at a fantastic discount.</p>
+          <div class="offer-footer">
+            <span class="offer-validity">Valid till Mar 31</span>
+            <a href="#contact" class="offer-cta">Claim Now →</a>
+          </div>
+        </div>
+
+        <div class="offer-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="offer-badge">MOST LOVED</div>
+          <div class="offer-icon"><i class="fas fa-ice-cream"></i></div>
+          <h3>Free Dessert</h3>
+          <p>Order any main course above ₹499 and enjoy a complimentary chef's special dessert of your choice.</p>
+          <div class="offer-footer">
+            <span class="offer-validity">Ongoing Offer</span>
+            <a href="#contact" class="offer-cta">Claim Now →</a>
+          </div>
+        </div>
+
+        <div class="offer-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="offer-badge">WEEKEND</div>
+          <div class="offer-icon"><i class="fas fa-wine-glass-alt"></i></div>
+          <h3>Weekend Special</h3>
+          <p>Saturday & Sunday combo platters for 2 including a refreshing mocktail — all at one special price.</p>
+          <div class="offer-footer">
+            <span class="offer-validity">Every Weekend</span>
+            <a href="#contact" class="offer-cta">Claim Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU PREVIEW ===================== -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Culinary Delights</p>
+        <h2 class="section-title">Our <span class="accent">Menu</span></h2>
+        <p class="section-sub">Handpicked favourites that our guests keep coming back for. Bold flavours, premium quality.</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-category="all">All</button>
+        <button class="menu-tab" data-category="starters">Starters</button>
+        <button class="menu-tab" data-category="mains">Mains</button>
+        <button class="menu-tab" data-category="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Items injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <img
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80"
+            alt="Chef preparing food"
+            class="about-img-main"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=400&q=80"
+            alt="Restaurant interior"
+            class="about-img-secondary"
+          />
+          <div class="about-badge">
+            <span class="badge-num">15</span>
+            <span class="badge-text">Years of<br/>Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="section-tag">Our Story</p>
+          <h2 class="section-title">Passion for <span class="accent">Perfection</span></h2>
+          <p class="about-text">Founded in 2009, Ember & Ash was born from a dream — to create a dining destination where every guest feels like royalty. Our kitchen blends tradition with innovation, honouring classic recipes while embracing bold, modern techniques.</p>
+          <p class="about-text">We source ingredients from local farms and trusted suppliers, ensuring that every plate carries the promise of freshness and quality.</p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+              <div class="feature-text">
+                <h4>Fresh Ingredients</h4>
+                <p>Farm-to-table sourcing every single day</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-hat-chef"></i></div>
+              <div class="feature-text">
+                <h4>Expert Chefs</h4>
+                <p>Award-winning culinary masters at work</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+              <div class="feature-text">
+                <h4>Fast Service</h4>
+                <p>Hot meals served within 20 minutes</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fas fa-heart"></i></div>
+              <div class="feature-text">
+                <h4>Made with Love</h4>
+                <p>Every dish carries warmth and passion</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Reserve Your Table</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALLERY SECTION ===================== -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Visual Feast</p>
+        <h2 class="section-title">Our <span class="accent">Gallery</span></h2>
+        <p class="section-sub">Moments captured, memories made. A peek into the art we create every day.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Grilled steak dish" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80" alt="Pizza from the oven" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=500&q=80" alt="Pancakes with berries" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500&q=80" alt="Colourful salad bowl" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+        </div>
+        <div class="gallery-item tall">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91798d792c?w=500&q=80" alt="Dessert plating" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=500&q=80" alt="Burger and fries" loading="lazy" />
+          <div class="gallery-overlay"><i class="fas fa-expand-alt"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What People Say</p>
+        <h2 class="section-title">Guest <span class="accent">Reviews</span></h2>
+        <p class="section-sub">Don't just take our word for it — here's what our beloved guests have to say.</p>
+      </div>
+
+      <div class="testimonial-slider-wrapper">
+        <div class="testimonial-slider" id="testimonialSlider">
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">"The morning light, the smell of freshly ground beans, and a perfectly made flat white — Ember &amp; Ash is my ritual. It's rare to find a café that feels this intentional and this warm."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Sharma" />
+                <div>
+                  <span class="author-name">Priya Sharma</span>
+                  <span class="author-role">Food Blogger, Mumbai</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">"The avocado toast and house-made lemonade on a lazy Sunday — that's what perfect weekends are made of. The staff remember your name and your order. That kind of warmth is irreplaceable."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rohan Mehta" />
+                <div>
+                  <span class="author-name">Rohan Mehta</span>
+                  <span class="author-role">Marketing Director, Pune</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-inner">
+              <div class="stars">★★★★★</div>
+              <p class="testimonial-text">"Their seasonal menu changes keep things exciting, but the warmth of the space stays constant. The mushroom risotto is an absolute must. I bring every out-of-town guest here without hesitation."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ananya Bose" />
+                <div>
+                  <span class="author-name">Ananya Bose</span>
+                  <span class="author-role">Chef &amp; Influencer, Bengaluru</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn" id="prevBtn" aria-label="Previous review"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots" id="sliderDots"></div>
+          <button class="slider-btn" id="nextBtn" aria-label="Next review"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT / RESERVATION ===================== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="section-tag">Get In Touch</p>
+          <h2 class="section-title">Reserve Your <span class="accent">Table</span></h2>
+          <p class="contact-desc">Experience culinary magic first-hand. Fill in the form and we'll confirm your reservation within 24 hours.</p>
+
+          <div class="info-items">
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Our Location</strong>
+                <p>42, Flamepath Road, Bandra West,<br />Mumbai – 400050, Maharashtra</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div>
+                <strong>Call Us</strong>
+                <p>+91 98xxx xxxxxx</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>Mon–Fri: 12 PM – 11 PM<br />Sat–Sun: 10 AM – 12 AM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="reservation-form" id="reservationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guestName">Full Name</label>
+                <input type="text" id="guestName" name="guestName" placeholder="John Doe" />
+                <span class="form-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="guestEmail">Email Address</label>
+                <input type="email" id="guestEmail" name="guestEmail" placeholder="john@email.com" />
+                <span class="form-error" id="emailError"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guestDate">Select Date</label>
+                <input type="date" id="guestDate" name="guestDate" />
+                <span class="form-error" id="dateError"></span>
+              </div>
+              <div class="form-group">
+                <label for="guestTime">Select Time</label>
+                <input type="time" id="guestTime" name="guestTime" />
+                <span class="form-error" id="timeError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guestCount">Number of Guests</label>
+              <select id="guestCount" name="guestCount">
+                <option value="">Select guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6+">6+ People</option>
+              </select>
+              <span class="form-error" id="guestsError"></span>
+            </div>
+            <div class="form-group">
+              <label for="guestMessage">Special Requests (Optional)</label>
+              <textarea id="guestMessage" name="guestMessage" rows="3" placeholder="Any dietary requirements, special occasions..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span class="btn-text"><i class="fas fa-calendar-check"></i> Book My Table</span>
+              <span class="btn-loading" style="display:none;"><i class="fas fa-circle-notch fa-spin"></i> Confirming...</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <strong>Reservation Confirmed!</strong>
+              <p>We'll send a confirmation to your email shortly. See you soon!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="nav-logo">
+              <span class="logo-icon">🔥</span>
+              <span class="logo-text">Ember <span class="logo-accent">&amp;</span> Ash</span>
+            </a>
+            <p>A celebration of flavour, culture, and craft. Where every meal is an unforgettable memory.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Opening Hours</h4>
+            <ul>
+              <li>Monday – Friday</li>
+              <li class="highlight">12:00 PM – 11:00 PM</li>
+              <li>Saturday – Sunday</li>
+              <li class="highlight">10:00 AM – 12:00 AM</li>
+            </ul>
+          </div>
+
+          <div class="footer-links-col">
+            <h4>Contact Info</h4>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i> 42 Flamepath Rd, Bandra West, Mumbai 400050</li>
+              <li><i class="fas fa-phone-alt"></i> +91 98XXXXXXX</li>
+              <li><i class="fas fa-envelope"></i> hello@emberandash.in</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Ember &amp; Ash. All rights reserved. Crafted with <span class="heart">❤️</span> for food lovers.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
